@@ -1,0 +1,68 @@
+deal_id:
+  label: "Сделка"
+  type: index
+  source: model
+  target: "Deals\\Deal"
+  searchable: false
+  filterable: true
+  index: true
+sab_id:
+  label: "Sab id"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+sab_ver:
+  label: "Sab ver"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+user_id:
+  label: "Пользователь"
+  type: index
+  source: model
+  target: User
+  searchable: false
+  filterable: true
+  index: true
+status:
+  label: "Статус"
+  type: index
+  source: config
+  target: atlon.list.acts.status
+  default: 0
+  searchable: false
+  filterable: true
+date_sign:
+  label: "Дата подписания"
+  type: date
+  nullable: true
+  searchable: false
+  filterable: false
+date_paid:
+  label: "Дата оплаты"
+  type: date
+  nullable: true
+  searchable: false
+  filterable: false
+total:
+  label: "Сумма"
+  type: integer
+  default: 0
+  searchable: false
+  filterable: false
+additional:
+  label: "Сумма доп работ"
+  type: integer
+  default: 0
+  searchable: false
+  filterable: false
+works:
+  label: "Список работ"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false

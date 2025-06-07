@@ -1,0 +1,82 @@
+title:
+  label: "Название"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+description:
+  label: "Описание"
+  type: text
+  nullable: true
+  searchable: true
+  filterable: false
+completed:
+  label: "Задача завершена"
+  type: boolean
+  default: false
+  searchable: false
+  filterable: true
+start:
+  label: "Дата/время начала"
+  type: date
+  searchable: false
+  filterable: false
+duration:
+  label: "Продолжительность"
+  type: integer
+  nullable: true
+  searchable: false
+  filterable: false
+end:
+  label: "Дата/время окончания"
+  type: date
+  nullable: true
+  searchable: false
+  filterable: false
+all_day:
+  label: "Весь день"
+  type: boolean
+  default: false
+  searchable: false
+  filterable: true
+author:
+  label: "Автор"
+  type: index
+  source: model
+  target: User
+  searchable: false
+  filterable: true
+performer:
+  label: "Исполнитель"
+  type: index
+  source: model
+  target: User
+  nullable: true
+  searchable: false
+  filterable: true
+type:
+  label: "Тип"
+  type: index
+  source: config
+  target: atlon.list.task.types
+  pluck: code|name
+  nullable: true
+  searchable: false
+  filterable: false
+status:
+  label: "Статус"
+  type: index
+  source: config
+  target: atlon.list.task.statuses
+  pluck: code|name
+  nullable: true
+  searchable: false
+  filterable: false
+deal_id:
+  label: "Сделка"
+  type: index
+  source: model
+  target: "Deals\\Deal"
+  nullable: true
+  searchable: false
+  filterable: false

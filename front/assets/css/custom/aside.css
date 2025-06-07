@@ -1,0 +1,109 @@
+/*Aside - правый сайдбар*/
+.aside {
+    --vs-line-height: 1.25;
+}
+
+.aside .vs__search {
+    margin-top: 0 !important;
+    border: none !important;
+}
+
+.aside .p-select,
+.aside .p-checkbox-box,
+.aside .p-inputtext,
+.aside .p-treeselect,
+.calendar-aside input,
+.aside .p-iftalabel .vs__dropdown-toggle {
+    @apply border-aside-input-border;
+}
+
+.aside .p-select:focus,
+.aside .p-checkbox-box:focus,
+.aside .p-inputtext:focus,
+.aside .p-treeselect:focus {
+    @apply ring-transparent;
+}
+
+
+
+.aside {
+    --vs-font-size: 14px;
+}
+
+.aside .p-iftalabel {
+    @apply w-full;
+}
+
+.aside .p-inputtext {
+    @apply focus:ring;
+}
+
+.aside__caption-field {
+    margin-bottom: 4px;
+    @apply text-aside-caption-field;
+    font-weight: 500;
+}
+
+.aside__section {
+    width: 100%;
+    @apply mb-2;
+}
+
+.aside-filter summary {
+    @apply font-medium;
+}
+
+.aside-filter__content {
+    background-color: var(--p-aside-filter-bg);
+}
+
+.aside-filter__content label {
+    @apply font-medium;
+}
+
+.dark .aside-filter summary {
+    border-color: var(--p-surface-700);
+}
+
+.aside-filter__v-select.vs--open {
+    @apply ring;
+}
+
+.aside-filter__content .p-inputtext {
+    @apply w-full focus:ring;
+    line-height: 1.25;
+}
+
+.aside .p-iftalabel .vs__dropdown-toggle {
+    padding: 1.5rem 0 0.5rem;
+}
+
+.aside .p-fieldset {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem; 
+}
+
+.aside .p-inputgroupaddon {
+    @apply p-0;
+}
+
+
+/* .aside__section .p-select-label {
+    @apply !text-aside-base px-aside-input-px py-aside-input-py;
+} */
+
+.aside .p-inputgroupaddon {
+    @apply text-text-color;
+}
+
+
+
+.calendar-aside input {
+    @apply !text-aside-base;
+}
+
+
+.aside-accent-btn {
+    /*@apply py-2 mb-1 px-8 border-surface-400 border-dashed border-2 font-medium rounded-lg w-full;*/
+    @apply py-2 px-8 bg-primary-500 hover:bg-primary-600 w-full mb-1 text-white text-base flex items-center justify-center gap-2 ;
+}

@@ -1,0 +1,101 @@
+type:
+  label: "Тип операции"
+  type: index
+  source: values
+  values:
+    1 : Приход
+    2 : Расход
+    3 : Перемещение
+total:
+  label: "Сумма"
+  type: float
+  default: 0
+  nullable: true
+  searchable: false
+  filterable: false
+item:
+  label: "Операция"
+  type: index
+  source: values
+  values:
+    1 : 'Оплата Акта'
+    2 : 'Спецмонтаж'
+    3 : 'Черновой'
+    4 : 'Чистовой'
+    5 : 'Пополнение Депозита'
+    6 : 'Проектирование'
+    7 : 'Прочие поступления'
+    20 : 'ФОТр Мастеров'
+    21 : 'Скидка'
+    22 : 'Удержание'
+    23 : 'Переделка'
+    24 : 'Доп расходы'
+    25 : 'Комиссия'
+    26 : 'ФОТр подряды'
+    27 : 'ФОТр прораба'
+    28 : 'Прочие расходы'
+    29 : 'Возврат депозита'
+    30 : 'Аванс'
+    40 : 'Отдал'
+    41 : 'В компанию'
+  searchable: true
+  filterable: false
+comment:
+  label: "Комментарий"
+  type: text
+  nullable: true
+  searchable: true
+  filterable: false
+date_transaction:
+  label: "Дата проведения операции"
+  type: date
+  searchable: false
+  filterable: false
+deal_id:
+  label: "Сделка"
+  type: index
+  source: model
+  target: "Deals\\Deal"
+  nullable: true
+  searchable: false
+  filterable: false
+cash_register_id:
+  label: "Касса"
+  type: index
+  source: model
+  target: "Finance\\CashRegister"
+  nullable: true
+  searchable: false
+  filterable: false
+cash_register_recipient_id:
+  label: "Касса получатель"
+  type: index
+  source: model
+  target: "Finance\\CashRegister"
+  nullable: true
+  searchable: false
+  filterable: false
+user_id:
+  label: "Кто добавил"
+  type: index
+  source: model
+  target: "User"
+  filterable: true
+files:
+  label: "Сканы документов"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+status:
+  label: "Статус"
+  type: index
+  source: values
+  values:
+    0 : Подготовка
+    1 : В обработке
+    2 : Согласован
+    3 : Принят
+    4 : Не принят
+  searchable: false
+  filterable: false

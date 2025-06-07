@@ -1,0 +1,121 @@
+full_name:
+  label: "Полное наименование"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+short_name:
+  label: "Краткое наименование"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+phone:
+  label: "Телефон"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+email:
+  label: "Эл. почта"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+website:
+  label: "Сайт"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+city:
+  label: "Город"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+legal_address:
+  label: "Юр. адрес"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+director:
+  label: "ФИО генерального директора"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+glavbuh:
+  label: "ФИО главного бухгалтера"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+inn:
+  label: "ИНН"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+kpp:
+  label: "КПП"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+ogrn:
+  label: "ОГРН"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+okpo:
+  label: "ОКПО"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+oktmo:
+  label: "ОКТМО"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+bank_accounts:
+  label: "Реквизиты банка"
+  type: array
+  nullable: true
+  searchable: true
+  filterable: false
+registration_date:
+  label: "Дата гос. регистрации"
+  type: date
+  nullable: true
+  searchable: true
+  filterable: false
+facsimile:
+  label: "Факсимиле"
+  type: file
+  nullable: true
+  searchable: true
+  filterable: false
+stamp:
+  label: "Печать"
+  type: file
+  nullable: true
+  searchable: true
+  filterable: false
+logo:
+  label: "Логотип"
+  type: file
+  nullable: true
+  searchable: true
+  filterable: false
+sort:
+  label: "Порядок сортировки"
+  type: integer
+  default: 0
+  nullable: true
+  searchable: true
+  filterable: false

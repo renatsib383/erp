@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="129" height="151" viewBox="0 0 129 151">
+  <g fill="none" fill-rule="evenodd">
+    <g transform="rotate(90 52 75)">
+      <path fill="#EEE" stroke="#000" stroke-width="2" d="M127,104.875424 L127,2 L2,2 L2,104.875424 L127,104.875424 Z"/>
+      <text fill="#000" style="font-family:'ArialMT'; font-size:10px;" transform="rotate(-90 64.5 119.46)">
+        <tspan x="59" y="124.96">A</tspan>
+      </text>
+    </g>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M19.6176991 108L-3.48480339e-14 108M19.6176991 1L-5.22720509e-14 1" transform="rotate(90 62.5 65.5)"/>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="68" y="15">B</tspan>
+    </text>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M19.617699 152L-1.81188398e-13 152M19.617699 23.5L-1.81188398e-13 23.5"/>
+  </g>
+</svg>

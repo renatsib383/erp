@@ -1,0 +1,86 @@
+
+.v-select-custom {
+    --vs-dropdown-option-padding: 8px 12px;
+    --vs-dropdown-option--active-color: var();
+    --vs-border-radius: 0rem;
+    --vs-search-input-placeholder-color: var(--p-surface-500);
+}
+
+.v-select-custom  .vs__dropdown-toggle {
+    background-color: var(--vs-bg);
+}
+
+.v-select-custom .vs__selected-options {
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: 15px !important;
+}
+
+.v-select-custom.vs--multiple .vs__selected {
+    margin-bottom: 1px !important;
+    margin-right: 1px !important;
+}
+
+/* .dark .v-select-custom {
+    --vs-dropdown-option--active-bg: var(--p-highlight-focus-background);
+} */
+
+.v-select-custom .vs__dropdown-menu {
+    @apply p-1;
+    background-color: var(--vs-dropdown-bg);
+}
+
+
+.p-select-list-container {
+    @apply text-sm;
+}
+
+/* .v-select-custom {
+    @apply rounded-lg;
+} */
+    
+.v-select-custom .vs__actions {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 12px;
+    padding: 0;
+    color: var(--p-aside-dropdown-icon);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.v-select-custom .vs__open-indicator {
+    width: 16px;
+    height: 16px;
+}
+
+.v-select-custom  .vs__dropdown-option--highlight {
+    background-color: var(--p-highlight-focus-background);
+}
+
+/*.v-select-custom  .vs__dropdown-option {*/
+/*    border-radius: 2px;*/
+/*}*/
+
+.v-select-stage .vs__dropdown-option {
+    padding: 6px 4px;
+}
+
+.p-iftalabel .v-select-custom .vs__dropdown-toggle {
+    padding: 1.5rem 0 0.5rem;
+}
+
+.p-iftalabel .v-select-custom .vs__selected,
+.p-iftalabel .v-select-custom .vs__search 
+{
+    margin: 0;
+    line-height: inherit;
+    border: none;
+}
+
+.v-select-chatgroup .vs__dropdown-toggle {
+    padding-top: 5px;
+    padding-bottom: 7px;
+ }

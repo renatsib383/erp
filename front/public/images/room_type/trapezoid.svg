@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="170" viewBox="0 0 122 170">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#EEE" stroke="#000" stroke-width="2" d="M132.816203,132.816203 L132.816203,36.1837967 L34.8725901,36.1837967 L7.81620326,48.6442811 L7.81620326,120.563333 L36.0492946,132.816203 L132.816203,132.816203 Z" transform="rotate(90 70.316 84.5)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M19.617699 149L-1.98951966e-13 149M19.617699 49.5L-2.00728323e-13 49.5"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M42.8088495,9.8088495 L23.1911505,9.8088495" transform="rotate(90 33 9.809)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M21.1112159,44.1471143 L1.88878407,44.8528857" transform="rotate(30 11.5 44.5)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M34.3612159,15.080127 L14.6387841,14.919873" transform="rotate(30 24.5 15)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M116.808849,9.8088495 L97.1911505,9.8088495" transform="rotate(90 107 9.809)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M29.5,158.5 L10.5,158.5" transform="rotate(90 20 158.5)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M130,158.5 L111,158.5" transform="rotate(90 120.5 158.5)"/>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="4" y="105">A</tspan>
+    </text>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="65" y="16">C</tspan>
+    </text>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="65" y="164">D</tspan>
+    </text>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="11" y="34.557">B</tspan>
+    </text>
+  </g>
+</svg>

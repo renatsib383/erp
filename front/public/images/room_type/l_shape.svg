@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="183" height="151" viewBox="0 0 183 151">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#EEE" stroke="#000" stroke-width="2" d="M163.5,166.5 L163.5,8.5 L38.5,8.5 L38.5,72.7105263 L93.7027284,72.7105263 L93.7027284,166.5 L163.5,166.5 Z" transform="rotate(90 101 87.5)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M20 74L.382301 74M19.6176991.5L0 .5" transform="translate(0 78)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M20 .5L20 55M19.6176991.5L0 .5" transform="translate(0 23)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M20.5.5L20.5 94M19.6176991 94L-7.03751707e-14 94M19.6176991.5L0 .5" transform="rotate(90 55.5 58.5)"/>
+    <path stroke="#C7C7C7" stroke-linecap="round" d="M19.6176991 68.5L0 68.5M19.6176991.5L0 .5" transform="rotate(90 89.5 92.5)"/>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="0" y="123">A</tspan>
+    </text>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="0" y="55">C</tspan>
+    </text>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="61" y="15">B</tspan>
+    </text>
+    <text fill="#000" style="font-family:'ArialMT'; font-size:10px;">
+      <tspan x="142" y="15">D</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+id:
+    type: id
+    label: "ID"
+    placeholder: "Введите ID"
+    required: true
+    unique: true
+
+name:
+    type: string
+    label: "Наименование"
+    placeholder: "Введите наименование"
+    required: true

@@ -1,0 +1,30 @@
+surname:
+  type: string
+  label: "Фамилия"
+  nullable: true
+  searchable: true
+  filterable: false
+name:
+  type: string
+  label: "Имя"
+  nullable: true
+  searchable: true
+  filterable: false
+patronymic:
+  type: string
+  label: "Отчество"
+  nullable: true
+  searchable: true
+  filterable: false
+phone:
+  type: string
+  label: "Телефон"
+  nullable: true
+  searchable: true
+  filterable: false
+email:
+  type: string
+  label: "Эл. почта"
+  nullable: true
+  searchable: true
+  filterable: false

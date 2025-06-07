@@ -1,0 +1,32 @@
+sab_id:
+  type: integer
+  label: "Sab id"
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+name:
+  type: string
+  label: "Название"
+  nullable: true
+  searchable: true
+  filterable: false
+room_type:
+  type: integer
+  label: "Тип комнаты"
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+works:
+  type: array
+  label: "Список работ"
+  nullable: true
+  searchable: false
+  filterable: false
+sort:
+  type: integer
+  label: "Порядок сортировки"
+  default: 0
+  searchable: false
+  filterable: false

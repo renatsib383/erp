@@ -1,0 +1,124 @@
+fio:
+  type: string
+  label: "ФИО"
+  nullable: true
+  searchable: true
+  filterable: false
+phone:
+  type: string
+  label: "Телефон"
+  nullable: true
+  searchable: true
+  filterable: false
+email:
+  type: string
+  label: "Эл. почта"
+  nullable: true
+  searchable: true
+  filterable: false
+chief:
+  type: index
+  label: "Руководитель"
+  source: model
+  target: "Staff\\Employee"
+  searchable: false
+  filterable: true
+position_id:
+  type: index
+  label: "Должность"
+  source: model
+  target: "Staff\\Position"
+  searchable: false
+  filterable: true
+company_id:
+  type: index
+  label: "Компания"
+  source: model
+  target: "Divisions\\Company"
+  nullable: true
+  searchable: false
+  filterable: true
+gender:
+  type: string
+  label: "Пол"
+  nullable: true
+  searchable: true
+  filterable: false
+short_name:
+  type: string
+  label: "Сокращённое наименование"
+  nullable: true
+  searchable: true
+  filterable: false
+address:
+  type: string
+  label: "Адрес"
+  nullable: true
+  searchable: true
+  filterable: false
+work_phone:
+  type: string
+  label: "Рабочий телефон"
+  nullable: true
+  searchable: true
+  filterable: false
+inn:
+  type: string
+  label: "ИНН"
+  nullable: true
+  searchable: true
+  filterable: false
+snils:
+  type: string
+  label: "СНИЛС"
+  nullable: true
+  searchable: true
+  filterable: false
+salary:
+  type: string
+  label: "Зарплата"
+  nullable: true
+  searchable: true
+  filterable: false
+passport:
+  label: "Паспорт"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+documents:
+  label: "Сканы документов"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+photo:
+  label: "Фото"
+  type: file
+  nullable: true
+  searchable: false
+  filterable: false
+birthday:
+  label: "Дата рождения"
+  type: date
+  nullable: true
+  searchable: true
+  filterable: false
+hired:
+  label: "Дата приёма на работу"
+  type: date
+  nullable: true
+  searchable: true
+  filterable: false
+fired:
+  label: "Дата увольнения"
+  type: date
+  nullable: true
+  searchable: true
+  filterable: false
+sort:
+  type: integer
+  label: "Порядок сортировки"
+  default: 0
+  searchable: false
+  filterable: false

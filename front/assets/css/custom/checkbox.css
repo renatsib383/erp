@@ -1,0 +1,32 @@
+.custom-checkbox::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+}
+
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    top: 3px;
+    left: 3px;
+    transition: all 100ms ease-out;
+}
+
+.custom-checkbox:checked::after {
+    left: 18px;
+}
+
+.custom-checkbox:focus:not(.focus-visible) {
+    outline: none;
+}
+
+.custom-checkbox:disabled {
+    @apply opacity-60;
+}

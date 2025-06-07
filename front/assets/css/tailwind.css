@@ -1,0 +1,203 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import './primevue/_all.css';
+@import './custom/_all.css';
+@import "tailwindcss/utilities";
+
+@layer base {
+    body {
+        overflow: hidden;  /* Убрали, чтобы обновлялась страница в pwa по свайпу вниз*/
+        margin: 0 !important;
+        height: 100vh;
+    }
+
+    html {
+        /* @apply font-serif; */
+        font-size: 16px;
+        /* font-family: 'Montserrat', sans-serif; */
+        font-family: 'Gilroy', sans-serif;
+    }
+    #__nuxt{
+        height: 100%;
+    }
+    
+    h1, h2, h3, h4{
+        @apply font-bold;
+    }
+
+    a:focus-within {
+        outline: none;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+        margin: 0;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+@layer components {
+    .chat__bg {
+        background-image: url("/images/chat_work_bg.svg"), linear-gradient(136deg, rgb(229, 255, 244) 0%, rgb(180, 222, 200) 55.21%, rgb(224, 255, 242) 100%), none;
+    }
+
+    .chat__bg--discussion {
+        background-image: url("/images/chat_work_bg.svg"), linear-gradient(136deg, rgb(229, 244, 255) 0%, rgb(180, 209, 232) 55.21%, rgb(224, 242, 255) 100%), none;
+    }
+
+    .dark .chat__bg {
+        background-image: url("/images/chat_work_bg.svg"), linear-gradient(136deg, var(--p-surface-900) 0%, var(--p-surface-950) 55.21%, var(--p-surface-900) 100%), none;
+    }
+
+    .dark .chat__bg--discussion {
+        background-image: url("/images/chat_work_bg.svg"), linear-gradient(136deg, var(--p-surface-900) 0%, var(--p-surface-950) 55.21%, var(--p-surface-900) 100%), none;
+    }    
+
+
+    .chat-work__msg {
+        max-width: 75%;
+        padding: 8px 10px;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #26292b;
+    }
+
+    /* .chat-work__msg--me {
+        background-color: #55AEF6;
+        color: #fff;
+    } */
+
+    .chat-work__msg--client {
+        background-color: #d9fdd3;
+        /* color: #fff; */
+    }
+
+    .chat-work__msg-user {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.35;
+        color: #0f3d78;
+    }
+
+    .chat-work__msg--me .chat-work__msg-user,
+    .chat-work__msg--client .chat-work__msg-user{
+        /* color: #fff; */
+    }
+
+    .chat-work__created {
+        float: right;
+        margin: 2px 0 -2px 10px;
+    }
+
+    .chat__date-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 28px;
+        border-radius: 80px;
+        font-size: 13px;
+        box-shadow: 0 1px 1px #26292b1a;
+    }
+
+    .chat-feed__entity--event i {
+        word-break: break-word;
+    }
+
+    .chat-feed__entity--msg,
+    .chat-feed__entity--task {
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: box-shadow ease-in-out .2s;
+    }
+
+    .chat-feed__entity--msg:hover,
+    .chat-feed__entity--task:hover {
+        box-shadow: 0px 8px 17px -12px #92a3b4;
+    }
+
+    .chat-feed__entity-icon i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        background-color: #cbd0d6;
+        border-radius: 50%;
+    }
+
+    .chat-feed__entity-title {
+        font-size: 13px;
+        line-height: 17px;
+        color: #92a3b4;
+    }
+
+    .section {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .custom-ifta-input {
+        @apply pt-6 pl-2.5 w-full border-primary-300 p-[0.45rem] m-0 border-[0.5px] text-black bg-white outline-0 hover:border-primary-400 active:border-surface-300 dark:bg-surface-950 dark:border-surface-600 dark:text-white disabled:bg-surface-200 disabled:text-surface-500;
+    }
+
+    .modal-form {
+        @apply grid gap-[1px] grid-cols-1 lg:grid-cols-[420px_1fr] xl:grid-cols-[480px_1fr] 2xl:grid-cols-[600px_1fr] h-[calc(100%-var(--modal-header-height))] text-text-color overflow-hidden bg-modal-body-bg;
+    }
+
+    .panel-left {
+        @apply lg:!w-[420px] xl:!w-[480px] 2xl:!w-[600px] lg:!grow-0 lg:!basis-auto;
+    }
+
+    .custom-nav {
+        @apply relative flex items-center gap-2 border-b-2 text-surface-700 dark:text-surface-400 dark:border-surface-500 justify-between w-full
+    }
+    .custom-nav-tab {
+        @apply text-center px-2 py-3 font-medium border-surface-500 cursor-pointer border-b-2 border-transparent -mb-[2px]
+    }
+    .custom-nav-tab_active {
+        @apply !text-surface-500 dark:!text-surface-100 !border-surface-500 dark:!border-surface-100
+    }
+    .custom-nav-history {
+        @apply pi pi-history text-center px-2 py-3 font-medium border-surface-500 cursor-pointer border-b-2 border-transparent -mb-[2px]
+    }
+
+    .custom-table-thead{
+        @apply sticky top-0 bg-header-bg z-[10] leading-none
+    }
+    .custom-table-tr{
+        @apply bg-white dark:bg-[#28334e] text-center border-b-4 border-header-bg w-full whitespace-nowrap h-[48px]
+    }
+
+}
+
+@layer utilities {
+/* Режимы для скролла (Chrome, Edge, Safari) */
+    /* Светлый */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--p-surface-500);
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-track {
+        /*background-color: var(--body);*/
+        background-color: transparent;
+    }
+    /* Темный */
+   .dark ::-webkit-scrollbar-thumb {
+       background-color: var(--p-surface-950);
+   }
+}

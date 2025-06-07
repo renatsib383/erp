@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 104.2 107" style="enable-background:new 0 0 104.2 107;" xml:space="preserve">
+<font horiz-adv-x="2048">
+<!-- Arial is a trademark of The Monotype Corporation. -->
+<!-- Copyright: Copyright 2022 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="ArialMT" units-per-em="2048" underline-position="-217" underline-thickness="150"/>
+<missing-glyph horiz-adv-x="1536" d="M256,0l0,1280l1024,0l0,-1280M288,32l960,0l0,1216l-960,0z"/>
+<glyph unicode="P" horiz-adv-x="1366" d="M158,0l0,1466l553,0C808,1466 883,1461 934,1452C1006,1440 1066,1417 1115,1384C1164,1350 1203,1303 1233,1242C1262,1181 1277,1115 1277,1042C1277,917 1237,812 1158,726C1079,639 935,596 728,596l-376,0l0,-596M352,769l379,0C856,769 945,792 998,839C1051,886 1077,951 1077,1036C1077,1097 1062,1150 1031,1194C1000,1237 959,1266 908,1280C875,1289 815,1293 727,1293l-375,0z"/>
+<glyph unicode="S" horiz-adv-x="1366" d="M92,471l183,16C284,414 304,354 336,307C367,260 416,222 483,193C550,164 625,149 708,149C782,149 847,160 904,182C961,204 1003,234 1031,273C1058,311 1072,353 1072,398C1072,444 1059,484 1032,519C1005,553 961,582 900,605C861,620 774,644 639,677C504,709 410,739 356,768C286,805 234,850 200,905C165,959 148,1020 148,1087C148,1161 169,1230 211,1295C253,1359 314,1408 395,1441C476,1474 565,1491 664,1491C773,1491 869,1474 952,1439C1035,1404 1098,1352 1143,1284C1188,1216 1212,1139 1215,1053l-186,-14C1019,1132 985,1202 928,1249C870,1296 785,1320 672,1320C555,1320 469,1299 416,1256C362,1213 335,1161 335,1100C335,1047 354,1004 392,970C429,936 527,901 685,866C842,830 950,799 1009,772C1094,733 1157,683 1198,623C1239,562 1259,493 1259,414C1259,336 1237,263 1192,194C1147,125 1083,71 1000,33C916,-6 822,-25 717,-25C584,-25 473,-6 384,33C294,72 224,130 173,208C122,285 95,373 92,471z"/>
+</font>
+
+	<g >
+	<g transform="rotate(90 52 75)">
+
+			<rect x="0.4" y="24.7" style="fill-rule:evenodd;clip-rule:evenodd;fill:#EEEEEE;stroke:#000000;stroke-width:2;" width="82.6" height="84.8"/>
+		<text transform="matrix(0 -0.9983 1 0 -4.8755 123.6499)" style="font-family:'ArialMT'; font-size:10px;">P</text>
+	</g>
+	<text id="S" transform="matrix(1 0 0 1 52.0531 69.3902)" style="font-family:'ArialMT'; font-size:10px;">S</text>
+</g>
+</svg>

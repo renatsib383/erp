@@ -1,0 +1,19 @@
+.p-iftalabel .datepicker-masked-input {
+    padding: 1.5rem 0.75rem 0.5rem;
+}
+
+.datepicker-custom {
+    position: absolute !important;
+    top:0;
+    bottom: 0;
+    left:0;
+    z-index: -1;
+}
+
+.datepicker-custom .p-inputtext {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}

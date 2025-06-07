@@ -1,0 +1,72 @@
+sab_id:
+  label: "Sab id"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+sab_ver:
+  label: "Sab ver"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+approved:
+  label: "Утверждена"
+  type: boolean
+  default: false
+  searchable: false
+  filterable: true
+act_rooms:
+  label: "Акты разбиты комнатам"
+  type: boolean
+  default: false
+  searchable: false
+  filterable: true
+deal_id:
+  label: "Сделка"
+  type: index
+  source: model
+  target: "Deals\\Deal"
+  searchable: false
+  filterable: true
+  index: true
+name:
+  label: "Название"
+  type: string
+  searchable: true
+  filterable: false
+total:
+  label: "Сумма"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+discount:
+  label: "Скидка"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+total_discount:
+  label: "Сумма со скидкой"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+comment:
+  label: "Комментарии"
+  type: text
+  nullable: true
+  searchable: true
+  filterable: false
+rooms:
+  label: "Комнаты"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false

@@ -1,0 +1,19 @@
+name:
+  type: string
+  label: "Имя"
+  nullable: true
+  searchable: true
+  filterable: false
+email:
+  type: string
+  label: "Эл. почта"
+  nullable: true
+  searchable: true
+  filterable: false
+password:
+  type: string
+  label: "Пароль"
+  hide: true
+  nullable: true
+  searchable: true
+  filterable: false

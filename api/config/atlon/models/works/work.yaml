@@ -1,0 +1,68 @@
+sab_id:
+  label: "Sab id"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+name:
+  label: "Название"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+price:
+  label: "Цена"
+  type: float
+  default: 0
+  searchable: false
+  filterable: true
+default_value:
+  label: "Объем по умолчанию"
+  type: float
+  default: 0
+  searchable: false
+  filterable: true
+work_group_id:
+  label: "Группа"
+  type: index
+  source: model
+  target: "Works\\WorkGroup"
+  searchable: false
+  filterable: true
+factor:
+  label: "Фактор"
+  type: index
+  source: config
+  target: atlon.list.work.factors
+  default: 0
+  searchable: false
+  filterable: true
+ed:
+  label: "Единицы измерения"
+  type: index
+  source: config
+  target: atlon.list.work.eds
+  default: 0
+  searchable: false
+  filterable: true
+type:
+  label: "Вид работ"
+  type: index
+  source: config
+  target: atlon.list.work.type
+  default: 0
+  searchable: false
+  filterable: true
+description:
+  label: "Комментарий"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+sort:
+  label: "Порядок сортировки"
+  type: integer
+  default: 0
+  searchable: false
+  filterable: false

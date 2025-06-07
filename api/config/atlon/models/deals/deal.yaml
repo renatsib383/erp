@@ -1,0 +1,261 @@
+sab_id:
+  label: "Sab id"
+  type: integer
+  hide: true
+  unique: true
+  nullable: true
+  searchable: false
+  filterable: false
+amo_id:
+  label: "AmoCRM Id"
+  type: integer
+  hide: true
+  unique: true
+  nullable: true
+  searchable: false
+  filterable: false
+amo_sync:
+  label: "Время синхронизации с AmoCRM"
+  type: datetime
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+company_id:
+  label: "Компания"
+  default: 1
+  type: index
+  source: model
+  target: "Divisions\\Company"
+uid:
+  label: "ИД объекта"
+  type: string
+  required: true
+  searchable: true
+  filterable: false
+region:
+  label: "Регион"
+  type: string
+  nullable: true
+  searchable: false
+  filterable: false
+address:
+  label: "Адрес"
+  type: string
+  nullable: true
+  searchable: false
+  filterable: false
+temperature:
+  label: "Лояльность клиента"
+  type: index
+  source: config
+  target: atlon.list.client.temperature
+  searchable: false
+  filterable: true
+lead_source:
+  label: "Откуда узнали о нас"
+  type: string
+  nullable: true
+  searchable: false
+  filterable: false
+budget_sum:
+  label: "Бюджет заказчика"
+  type: integer
+  default: 0
+  type_format: money
+  searchable: false
+  filterable: false
+deposit:
+  label: "Депозит"
+  type: float
+  default: 0
+  type_format: money
+  searchable: false
+  filterable: false
+skidka:
+  label: "Скидка"
+  type: integer
+  default: 0
+  searchable: false
+  filterable: false
+deferred_discount:
+  label: 'Отложенная скидка'
+  type: boolean
+  default: false
+  searchable: false
+  filterable: true
+deferred_skidka_paid:
+  label: 'Отложенная скидка выплачена'
+  type: boolean
+  default: false
+  searchable: false
+  filterable: true
+coef:
+  label: "Коэффициент"
+  type: float
+  default: 1
+  searchable: false
+  filterable: false
+price:
+  label: "Прайс лист"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+confirm_act:
+  label: 'Подтверждения акта сдачи-приемки'
+  type: boolean
+  default: false
+  searchable: false
+  filterable: true
+coef_price_master:
+  label: 'Коэффициент для прайса мастера'
+  type: float
+  nullable: true
+  searchable: false
+  filterable: false
+hold_master:
+  label: "Удержка мастера"
+  type: float
+  nullable: true
+  searchable: false
+  filterable: false
+forced_percent_master:
+  label: "Принудительный процент мастера"
+  type: float
+  nullable: true
+  searchable: false
+  filterable: false
+increase_master:
+  label: "Увеличения для мастера (%)"
+  type: float
+  nullable: true
+  searchable: false
+  filterable: false
+forced_percent_prorab:
+  label: "Принудительный процент прораба"
+  type: float
+  nullable: true
+  searchable: false
+  filterable: false
+confirmed_smet_sum:
+  label: "Сумма по смете"
+  type: integer
+  type_format: money
+  default: 0
+  searchable: false
+  filterable: false
+additional_works_sum:
+  label: "Сумма доп работ"
+  type: integer
+  type_format: money
+  default: 0
+  searchable: false
+  filterable: false
+prepayment:
+  label: "Размер предоплаты"
+  type: float
+  nullable: true
+  searchable: false
+  filterable: false
+facility_type:
+  label: "Тип недвижимости"
+  type: index
+  default: 0
+  source: config
+  target: atlon.list.facility.type
+  searchable: false
+  filterable: true
+facility_condition:
+  label: "Состояние недвижимости"
+  type: index
+  default: 0
+  source: config
+  target: atlon.list.facility.condition
+  searchable: false
+  filterable: true
+renovation_type:
+  label: "Тип ремонта"
+  type: index
+  default: 0
+  source: config
+  target: atlon.list.renovation.type
+  searchable: false
+  filterable: true
+date_start:
+  label: "Дата начала работ"
+  type: date
+  nullable: true
+  searchable: false
+  filterable: false
+date_end:
+  label: "Дата окончания работ"
+  type: date
+  nullable: true
+  searchable: false
+  filterable: false
+geo:
+  label: "GEO локация"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+agent:
+  label: "Агентский договор"
+  type: boolean
+  default: false
+  searchable: false
+  filterable: true
+partner:
+  label: "Партнерка"
+  type: string
+  nullable: true
+  searchable: false
+  filterable: false
+coef_additional_partner:
+  label: "Добавочный коэффициент партнёра"
+  type: float
+  nullable: true
+  searchable: false
+  filterable: false
+responsible:
+  label: "Ответственный"
+  type: index
+  source: model
+  target: User
+designer:
+  label: "Дизайнер"
+  type: index
+  source: model
+  target: User
+operator:
+  label: "КЦ1 ответственный за сделку"
+  type: index
+  source: model
+  target: User
+zamerman:
+  label: "Замерщик"
+  type: index
+  source: model
+  target: User
+prorab:
+  label: "Прораб"
+  type: index
+  source: model
+  target: User
+stages:
+  label: "Этапы"
+  hasMany: true
+  type: index
+  source: model
+  target: "Deals\\Stage"
+  default: 1
+  filterable: true
+contacts:
+  label: "Контакты"
+  hasMany: true
+  type: index
+  source: model
+  target: "Contacts\\Contact"
+  default: 1
+  filterable: true

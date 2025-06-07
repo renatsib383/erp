@@ -1,0 +1,15 @@
+stages:
+  - deploy
+deploy_dev:
+  stage: deploy
+  only:
+    - main
+  script:
+    - sudo su - www-root -c "cd /var/www/www-root/data/www/api.atloncrm.ru && git pull origin main && composer install"
+    - echo "OK"
+  environment:
+    name: development
+    url: https://api.atloncrm.ru
+  tags:
+    - dev_deploy
+

@@ -1,0 +1,41 @@
+sab_id:
+  label: "Sab id"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+deal_id:
+  label: "Сделка"
+  type: index
+  source: model
+  target: "Deals\\Deal"
+  searchable: false
+  filterable: false
+file:
+  label: "Файл"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+text:
+  label: "Текст"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+user_id:
+  label: "Пользователь"
+  type: index
+  source: model
+  target: User
+  searchable: false
+  filterable: true
+recipient:
+  label: "Получатель"
+  type: index
+  source: model
+  target: User
+  nullable: true
+  searchable: false
+  filterable: true

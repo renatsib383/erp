@@ -1,0 +1,12 @@
+name:
+  type: string
+  label: "Название"
+  nullable: true
+  searchable: true
+  filterable: false
+sort:
+  type: integer
+  label: "Порядок сортировки"
+  default: 0
+  searchable: false
+  filterable: false

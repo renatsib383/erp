@@ -1,0 +1,26 @@
+sab_id:
+  type: integer
+  label: "Sab id"
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+name:
+  type: string
+  label: "Название"
+  nullable: true
+  searchable: true
+  filterable: false
+work_category_id:
+  type: index
+  label: "Категория"
+  source: model
+  target: "Works\\WorkCategory"
+  searchable: false
+  filterable: true
+sort:
+  type: integer
+  label: "Порядок сортировки"
+  default: 0
+  searchable: false
+  filterable: false

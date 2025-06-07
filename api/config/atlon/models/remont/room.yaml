@@ -1,0 +1,114 @@
+sab_id:
+  label: "Sab id"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+deal_id:
+  label: "Сделка"
+  type: index
+  source: model
+  target: "Deals\\Deal"
+  searchable: false
+  filterable: true
+  index: true
+name:
+  label: "Название"
+  type: string
+  searchable: true
+  filterable: false
+room_type_id:
+  type: integer
+  label: "Тип комнаты"
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+room_size:
+  label: "Размеры комнаты"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+s_floor:
+  label: "Площадь пола"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+p_floor:
+  label: "Периметр пола"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+s_walls:
+  label: "Площадь стен"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+height:
+  label: "Высота"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+doors_width:
+  label: "Ширина дверей"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+perimeter:
+  label: "Периметр"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+s_holes:
+  label: "Площадь проемов"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+slopes_doors:
+  label: "Откосы дверей"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+slopes_windows:
+  label: "Откосы окон"
+  type: decimal
+  decimal_total: 10
+  default: 0
+  searchable: false
+  filterable: false
+doors:
+  label: "Двери"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+windows:
+  label: "Окна"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+columns:
+  label: "Колонны"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false

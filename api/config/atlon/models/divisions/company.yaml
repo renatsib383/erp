@@ -1,0 +1,21 @@
+name:
+  label: "Наименование"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+  required: true
+  unique: true
+price:
+  label: "Прайс лист"
+  type: array
+  nullable: true
+  searchable: false
+  filterable: false
+sort:
+  label: "Порядок сортировки"
+  type: integer
+  default: 0
+  nullable: true
+  searchable: true
+  filterable: false

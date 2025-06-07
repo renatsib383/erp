@@ -1,0 +1,26 @@
+name:
+  type: string
+  label: "Название"
+  nullable: true
+  searchable: true
+  filterable: false
+balance:
+  type: float
+  label: "Баланс"
+  default: 0
+  searchable: false
+  filterable: false
+sort:
+  type: integer
+  label: "Порядок сортировки"
+  default: 0
+  searchable: false
+  filterable: false
+companies:
+  label: "Компании"
+  hasMany: true
+  type: index
+  source: model
+  target: "Divisions\\Company"
+  default: 1
+  filterable: true

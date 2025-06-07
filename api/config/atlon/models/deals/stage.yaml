@@ -1,0 +1,34 @@
+amo_id:
+  label: "AMO id"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+sab_id:
+  label: "Sab id"
+  type: integer
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+title:
+  label: "Название"
+  type: string
+  nullable: true
+  searchable: true
+  filterable: false
+color:
+  label: "Цвет"
+  type: string
+  nullable: true
+  searchable: false
+  filterable: false
+pipeline_id:
+  label: "Воронка"
+  type: index
+  source: model
+  target: "Deals\\Pipeline"
+  default: 1
+  searchable: true
+  filterable: true

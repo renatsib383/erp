@@ -1,0 +1,33 @@
+stages:
+  - deploy
+deploy_dev:
+  stage: deploy
+  only:
+    - main
+  script:
+    - sudo su - www-root -c "cd /var/www/www-root/data/www/new.atloncrm.ru && git pull origin main"
+    - sudo su - www-root -c "cd /var/www/www-root/data/www/new.atloncrm.ru/.output/public && rm -rf"
+    - sudo su - www-root -c "cd /var/www/www-root/data/www/new.atloncrm.ru/dist && rm -rf"
+    - sudo su - www-root -c "cd /var/www/www-root/data/www/new.atloncrm.ru && npm install"
+    - sudo su - www-root -c "cd /var/www/www-root/data/www/new.atloncrm.ru && npm run build"
+    - echo "OK"
+  environment:
+    name: development
+    url: https://new.atloncrm.ru
+  tags:
+    - dev_deploy
+deploy_prod:
+  stage: deploy
+  only:
+    - main
+  when: manual
+  script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - echo "$CI_COMMIT_SHA"
+    - ssh -o StrictHostKeyChecking=no deployer@atloncrm.ru "~/vendor/bin/envoy run deploy --project=front --commit='$CI_COMMIT_SHA' --commit_short='$CI_COMMIT_SHORT_SHA' "
+  environment:
+    name: production
+    url: https://atloncrm.ru
+  tags:
+    - gitlab-runner

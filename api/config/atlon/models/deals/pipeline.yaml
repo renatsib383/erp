@@ -1,0 +1,26 @@
+amo_id:
+  type: integer
+  label: "AMO id"
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+sab_id:
+  type: integer
+  label: "Sab id"
+  hide: true
+  nullable: true
+  searchable: false
+  filterable: false
+name:
+  type: string
+  label: "Название"
+  nullable: true
+  searchable: true
+  filterable: false
+archive:
+  type: boolean
+  label: "Архивный"
+  nullable: true
+  searchable: true
+  filterable: true
